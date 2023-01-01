@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="mini">
+        <div class="input">
+            <input type="number" id="input1" placeholder=" Enter your frist number">
+            <input type="number" id="input2" placeholder=" Enter your second number">
+        </div>
+        <div class=' button'>
+            <button id="add" onclick="add()">Addition</button>
+            <button id="sub" onclick="sub()">Substraction</button>
+            <button id="mult" onclick="mult()">Multiplication</button>
+            <button id="div" onclick="div()">Division</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let input1 = document.querySelector("#input1");
+    let input2 = document.querySelector("#input2");
+     function add (){
+         alert((+input1.value)+(+input2.value));
+     }
+     function sub (){
+         alert((+input1.value)-(+input2.value));
+     }
+     function mult (){
+         alert((+input1.value)*(+input2.value));
+     }
+     function div (){
+         alert((+input1.value)/(+input2.value));
+     }
+</script>
